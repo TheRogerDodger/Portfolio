@@ -6,13 +6,13 @@
 {% include youtubePlayer.html id="Co-PABozkaU" %}
 
 # Artifact 1: C to Python
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
   
 # Artifact 2: Sign-in and Input Handling
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
   
 # Artifact 3: Firebase Integration
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;### Category: Databases
 
 ```markdown
 Syntax highlighted code block
