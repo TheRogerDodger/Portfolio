@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/TheRogerDodger/Portfolio/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Who am I?
+# Professional Self-Assessment
+# Code Review
+# Artifact 1: C to Python
+## Category: Software Design and Engineering
+# Artifact 2: Sign-in and Input Handling
+## Category: Algorithms and Data Structure
+# Artifact 3: Firebase Integrtation
+## Category: Databases
 
 ```markdown
 Syntax highlighted code block
