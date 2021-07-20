@@ -1,14 +1,14 @@
-## Who am I?
+# Who am I?
 # Professional Self-Assessment
 # Code Review
 {% include youtubePlayer.html id="Co-PABozkaU" %}
 https://youtu.be/Co-PABozkaU
 # Artifact 1: C to Python
-## Category: Software Design and Engineering
+### Category: Software Design and Engineering
 # Artifact 2: Sign-in and Input Handling
-## Category: Algorithms and Data Structure
-# Artifact 3: Firebase Integrtation
-## Category: Databases
+### Category: Algorithms and Data Structure
+# Artifact 3: Firebase Integration
+### Category: Databases
 
 ```markdown
 Syntax highlighted code block
