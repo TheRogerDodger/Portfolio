@@ -1,7 +1,7 @@
 # Who am I?
 # Professional Self-Assessment
 # Code Review
-<iframe id="video" width="560" height="315" src="https://youtu.be/Co-PABozkaU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+{% include youtubePlayer.html id="Co-PABozkaU" %}
 https://youtu.be/Co-PABozkaU
 # Artifact 1: C to Python
   ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
