@@ -1,19 +1,19 @@
 # Who am I?
-
+---
 # Professional Self-Assessment
-
+---
 # Code Review
 {% include youtubePlayer.html id="Co-PABozkaU" %}
-
+---
 # Artifact 1: [C to Python](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/C%20to%20Python)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
-  
+---
 # Artifact 2: [Sign-in and Input Handling](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Sign-in%20and%20Input%20Handling)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
-  
+---
 # Artifact 3: [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
-
+---
 ```markdown
 Syntax highlighted code block
 
