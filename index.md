@@ -4,11 +4,11 @@
 {% include youtubePlayer.html id="Co-PABozkaU" %}
 https://youtu.be/Co-PABozkaU
 # Artifact 1: C to Python
-### Category: Software Design and Engineering
+  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
 # Artifact 2: Sign-in and Input Handling
-### Category: Algorithms and Data Structure
+  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
 # Artifact 3: Firebase Integration
-### Category: Databases
+  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
 
 ```markdown
 Syntax highlighted code block
