@@ -12,7 +12,7 @@
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
   
 # Artifact 3: Firebase Integration
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;### Category: Databases
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
 
 ```markdown
 Syntax highlighted code block
