@@ -3,6 +3,6 @@ details > summary {
   width: 200px;
   background-color: #eeeeee;
   border: none;
-  box-shadow: 1px 1px 1px 1px #bbbbbb;
+  box-shadow: 1px 1px #bbbbbb;
   cursor: pointer;
 }
