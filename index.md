@@ -2,16 +2,10 @@
 
 # <u>Who am I?</u>
 
----
-
 # <u>Professional Self-Assessment</u>
-
----
 
 # <u>Code Review</u>
 {% include youtubePlayer.html id="Co-PABozkaU" %}
-
----
 
 # <u>Artifact 1: [C to Python](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/C%20to%20Python)</u>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
@@ -119,8 +113,6 @@ int main()
 
 The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
----
-
 # <u>Artifact 2: [Sign-in and Input Handling](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Sign-in%20and%20Input%20Handling)</u>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
 This artifact is a direct continuation from milestone 2 in CS-499 where I translated a program from C to Python. I chose to build off from my first artifact so I can show the steps I have taken to enhance the code. I believe doing it this way will show that I can take a program from fruition to the end. Before my enhancements, the program didn’t have a secure sign-on. It didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also didn’t care what was entered and would exit on certain inputs.
@@ -194,9 +186,6 @@ if choice == 'Y' or choice == 'y':
 print("Goodbye")
 {% endhighlight %}
 
-
----
-
 # <u>Artifact 3: [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)</u>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
 This artifact is a direct continuation from milestone 3 in CS-499 where I added more functionality to the code. I built off from this artifact to show that I can add new functionality to old projects. Before the enhancements this code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had passwords within a list which could be a security risk. I enhanced this artifact by integrating with a Real-time database, Firebase. 
@@ -209,9 +198,6 @@ The second function ChangeStudentGrades(), moves code that was in the main code 
 Database.child(“STUDENTS”).child(“Jim”).update({“grade” :  ”A”}); “A” will be the value changed.
 Since we are in a for-loop then we are using variables and the value being changed is a user input so we need input handling.
 The modifications made to existing code were in the DisplayStudntInformation() and SignInFeature(). For the display function we now connect to the database and loop through all students like we did in ChangeStudentGrades() but this time print both name and grade with no return. For SignInFeature() we kept the original user inputs and now use them to search the database and verify that the entered username and password combo exists.
-
-
----
 
 ```markdown
 Syntax highlighted code block
