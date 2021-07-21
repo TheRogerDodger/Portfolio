@@ -24,18 +24,18 @@ STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
 GRADES =  ['A','C','C','D','F','\0']
 {% endhighlight %}
 
-```
+{% highlight c %}
 const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
 char GRADES[6] =  {'A','C','C','D','F','\0'};
 ```
 
 {% highlight python %}
 def ReadUserInfo():
-    name = input("Enter name:") # name isnt used anywhere
-    password = input("Enter password:") # password
+    name = input("Enter name:")
+    password = input("Enter password:")
     return password
 {% endhighlight %}
-```
+{% highlight c %}
 int ReadUserInfo(){
   int password = 0;
   char str1[15];
@@ -45,16 +45,16 @@ int ReadUserInfo(){
   scanf(" %d", &password);
   return password;
 }
-```
+{% endhighlight %}
 {% highlight python %}
 def CheckUserPermissionAccess(password):
-    if int(password) == 123: # password needs to match
+    if int(password) == 123:
         check = True
     else:
         check = False
     return check
 {% endhighlight %}
-```
+{% highlight c %}
 bool CheckUserPermissionAccess(int password){
   bool check = 0;
   if(password == 123){
@@ -65,33 +65,33 @@ bool CheckUserPermissionAccess(int password){
   }
   return check;
 }
-```
+{% endhighlight %}
 {% highlight python %}
 def DisplayStudentInformation():
     for index, name in enumerate(STUDENTS):
         print(name + ": " + GRADES[index])
 {% endhighlight %}
-```
+{% highlight c %}
 void DisplayStudentInformation(){
   int i;
   for(i = 0; i <= 4; ++i){
     printf("%s %c\n", STUDENTS[i], GRADES[i]);
   }
 }
-```
+{% endhighlight %}
 {% highlight python %}
 password = ReadUserInfo()
 if CheckUserPermissionAccess(password) == True:
     print("Welcome professor. Below are all student grades")
     DisplayStudentInformation()
-    if input("Adjust grades for students? Y/N:") == "Y": # Asks to continue with Y
+    if input("Adjust grades for students? Y/N:") == "Y":
         print("Enter the GPA for students one at a time")
-        for index, name in enumerate(STUDENTS): # loops through list STUDENT
-            GRADES[index] = input(name + ":") # Outputs student name and input new grade
+        for index, name in enumerate(STUDENTS):
+            GRADES[index] = input(name + ":")
         print("You have successfully updated class grades. The grades are now as follows:")
         DisplayStudentInformation()
 {% endhighlight %}
-```
+{% highlight c %}
 int main()
 {
   int password;
@@ -115,7 +115,7 @@ int main()
   }
   return 0;
 }
-```
+{% endhighlight %}
 
 The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
