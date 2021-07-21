@@ -23,12 +23,10 @@ I chose this artifact because it shows my knowledge of multiple coding languages
 STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
 GRADES =  ['A','C','C','D','F','\0']
 {% endhighlight %}
-
 {% highlight c %}
 const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
 char GRADES[6] =  {'A','C','C','D','F','\0'};
-```
-
+{% endhighlight %}
 {% highlight python %}
 def ReadUserInfo():
     name = input("Enter name:")
