@@ -17,7 +17,9 @@ The video below shows a code review performed on the [original artifact](https:/
 
 The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c) comes from CS-410: Software Reverse Engineering where we were tasked on extracting [assembly code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/Assembly.txt) from an object file and converting it into C. To complete that assignment, I used the terminal command “objdump” to extract the assembly code from the object file and then proceeded to convert it into C. The program was designed to keep track of 5 student’s grades. During the conversion from assembly, I kept the functionality of the program exact, including all flaws.
 
-I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. Below I go into detail of my enhancement process and show the original C code followed by the converted Python code. 
+I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. To accomplish that I converted the C code into Python and show the code below, split up into respective sections.
+
+The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
 ---
 
@@ -135,8 +137,6 @@ if CheckUserPermissionAccess(password) == True:
 {% endhighlight %}
 
 ---
-
-The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
 # <u>Artifact 2:</u> [Sign-in and Input Handling](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Sign-in%20and%20Input%20Handling)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
