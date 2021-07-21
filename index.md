@@ -19,6 +19,104 @@ The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-page
 
 I chose this artifact because it shows my knowledge of multiple coding languages and my ability to convert code between them. 
 
+'''
+STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
+GRADES =  ['A','C','C','D','F','\0']
+'''
+'''
+const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
+char GRADES[6] =  {'A','C','C','D','F','\0'};
+'''
+'''
+def ReadUserInfo():
+    name = input("Enter name:") # name isnt used anywhere
+    password = input("Enter password:") # password
+    return password
+'''
+'''
+int ReadUserInfo(){
+  int password = 0;
+  char str1[15];
+  puts("Enter name:");
+  scanf("%s", str1);
+  puts("Enter password:");
+  scanf(" %d", &password);
+  return password;
+}
+'''
+'''
+def CheckUserPermissionAccess(password):
+    if int(password) == 123: # password needs to match
+        check = True
+    else:
+        check = False
+    return check
+'''
+'''
+bool CheckUserPermissionAccess(int password){
+  bool check = 0;
+  if(password == 123){
+    check = 1;
+  }
+  else{
+    check = 0;
+  }
+  return check;
+}
+'''
+'''
+def DisplayStudentInformation():
+    for index, name in enumerate(STUDENTS):
+        print(name + ": " + GRADES[index])
+'''
+'''
+void DisplayStudentInformation(){
+  int i;
+  for(i = 0; i <= 4; ++i){
+    printf("%s %c\n", STUDENTS[i], GRADES[i]);
+  }
+}
+'''
+'''
+password = ReadUserInfo()
+if CheckUserPermissionAccess(password) == True:
+    print("Welcome professor. Below are all student grades")
+    DisplayStudentInformation()
+    if input("Adjust grades for students? Y/N:") == "Y": # Asks to continue with Y
+        print("Enter the GPA for students one at a time")
+        for index, name in enumerate(STUDENTS): # loops through list STUDENT
+            GRADES[index] = input(name + ":") # Outputs student name and input new grade
+        print("You have successfully updated class grades. The grades are now as follows:")
+        DisplayStudentInformation()
+    
+    
+'''
+'''
+int main()
+{
+  int password;
+  int i;
+  char choice;
+  password = ReadUserInfo();
+  if(CheckUserPermissionAccess(password) == 1){
+    puts("Welcome professor. Below are all student grades");
+    DisplayStudentInformation();
+    puts("Adjust grades for students?");
+    scanf(" %c", &choice);
+    if(choice == 'Y'){
+      printf("Enter the GPA for students one at a time\n");
+        for(i=0; i <= 4; ++i){
+          printf("%s", STUDENTS[i]);
+          scanf(" %c", &GRADES[i]);
+        }
+      puts("You have successfully updated class grades. The grades are now as follows:");
+      DisplayStudentInformation();
+    }
+  }
+  return 0;
+}
+'''
+
 The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
 ---
