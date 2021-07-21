@@ -36,7 +36,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
   GRADES =  ['A','C','C','D','F','\0']
   {% endhighlight %}
 
-  ---
+  <hr>
 
   {% highlight c %}
   int ReadUserInfo(){
@@ -57,7 +57,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
       return password
   {% endhighlight %}
 
-  ---
+  <hr>
 
   {% highlight c %}
   bool CheckUserPermissionAccess(int password){
@@ -81,7 +81,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
       return check
   {% endhighlight %}
 
-  ---
+  <hr>
 
   {% highlight c %}
   void DisplayStudentInformation(){
@@ -98,7 +98,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
           print(name + ": " + GRADES[index])
   {% endhighlight %}
 
-  ---
+  <hr>
 
   {% highlight c %}
   int main()
@@ -139,7 +139,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
           DisplayStudentInformation()
   {% endhighlight %}
 
-  ---
+  <hr>
   
 </details>
 
