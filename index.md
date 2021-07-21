@@ -14,6 +14,8 @@ The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-page
 
 I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. 
 
+---
+
 {% highlight python %}
 STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
 GRADES =  ['A','C','C','D','F','\0']
@@ -22,6 +24,8 @@ GRADES =  ['A','C','C','D','F','\0']
 const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
 char GRADES[6] =  {'A','C','C','D','F','\0'};
 {% endhighlight %}
+
+---
 
 {% highlight python %}
 def ReadUserInfo():
@@ -40,6 +44,9 @@ int ReadUserInfo(){
   return password;
 }
 {% endhighlight %}
+
+---
+
 {% highlight python %}
 def CheckUserPermissionAccess(password):
     if int(password) == 123:
@@ -60,6 +67,9 @@ bool CheckUserPermissionAccess(int password){
   return check;
 }
 {% endhighlight %}
+
+---
+
 {% highlight python %}
 def DisplayStudentInformation():
     for index, name in enumerate(STUDENTS):
@@ -73,6 +83,9 @@ void DisplayStudentInformation(){
   }
 }
 {% endhighlight %}
+
+---
+
 {% highlight python %}
 password = ReadUserInfo()
 if CheckUserPermissionAccess(password) == True:
@@ -110,6 +123,8 @@ int main()
   return 0;
 }
 {% endhighlight %}
+
+---
 
 The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
