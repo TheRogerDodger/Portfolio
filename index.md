@@ -8,7 +8,7 @@ My name is Roger Johnson, a student at [Southern New Hampshire University](https
 
 # <u>Code Review</u>
 
-The video below shows a code review performed on the [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c). The review covers the origins of the artifact, existing functionality, code analysis, and the early thought process of potential enhancments. 
+The video below shows a code review performed on the [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c). The review covers the origins of the artifact, existing functionality, code analysis, and the early thought process of potential enhancements. 
 
 {% include youtubePlayer.html id="Co-PABozkaU" %}
 
