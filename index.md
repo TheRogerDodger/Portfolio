@@ -24,7 +24,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
 <details>
   <summary>Click to veiw code</summary>
   
-  ---
+  <hr>
 
   {% highlight c %}
   const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
