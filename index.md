@@ -134,7 +134,7 @@ PASSWORDS = ['password', 'Roger']
 
 {% highlight python %}
 def CheckUserPermissionAccess(password):
-    if int(password) == 123: # password needs to match
+    if int(password) == 123:
         check = True
     else:
         check = False
@@ -143,7 +143,7 @@ def CheckUserPermissionAccess(password):
 
 {% highlight python %}
 def CheckUserPermissionAccess(index, password):
-    if password == PASSWORDS[index]: # password needs to match
+    if password == PASSWORDS[index]:
         check = True
     else:
         check = False
@@ -153,10 +153,10 @@ def CheckUserPermissionAccess(index, password):
 {% highlight python %}  
 def SignInFeature():
     (password, name) = ReadUserInfo() 
-    for index, teacher in enumerate(TEACHERS): # Loops through TEACHERS list and tracks index
-        if name == teacher and CheckUserPermissionAccess(index, password) == True: # name and password must match
+    for index, teacher in enumerate(TEACHERS): 
+        if name == teacher and CheckUserPermissionAccess(index, password) == True: 
             signin = True
-            break # When match is found break out of for loop
+            break 
         else:
             signin = False
     return signin
@@ -166,7 +166,7 @@ def SignInFeature():
 def HandleInput(output, restriction):
     while True: # loop until return
         value = input(output)
-        try: # Used for when the inputed value type doesnt match the restriction type
+        try: 
             if type(restriction[0])(value) in restriction:
                 return value
             else:
@@ -176,16 +176,16 @@ def HandleInput(output, restriction):
 {% endhighlight %}
 
 {% highlight python %}   
-while SignInFeature() != True: # Loop until login is succesful
+while SignInFeature() != True: 
     print("Incorrect credentials. Try again")
 
 print("Welcome professor. Below are all student grades")
 DisplayStudentInformation()
-choice = HandleInput("Adjust grades for students? Y/N:", ['Y','y','N','n']) # Asks to continue with Y or N
-if choice == 'Y' or choice == 'y': # else not needed since program will end
+choice = HandleInput("Adjust grades for students? Y/N:", ['Y','y','N','n']) 
+if choice == 'Y' or choice == 'y': 
     print("Enter new grade for students one at a time")
-    for index, student in enumerate(STUDENTS): # loops through list STUDENTS
-        GRADES[index] = HandleInput(student + ":", ['a','A','b','B','c','C','d','D','f','F']).upper() # Outputs student name and input new grade
+    for index, student in enumerate(STUDENTS): 
+        GRADES[index] = HandleInput(student + ":", ['a','A','b','B','c','C','d','D','f','F']).upper() 
     print("You have successfully updated class grades. The grades are now as follows:")
     DisplayStudentInformation()
 
