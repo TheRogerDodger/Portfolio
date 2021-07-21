@@ -4,7 +4,7 @@
 
 ---
 
-# Professional Self-Assessment
+# <u>Professional Self-Assessment</u>
 
 ---
 
@@ -20,14 +20,14 @@ The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-page
 
 I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. 
 
->{% highlight python %}
->STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
->GRADES =  ['A','C','C','D','F','\0']
->{% endhighlight %}
->{% highlight c %}
->const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
->char GRADES[6] =  {'A','C','C','D','F','\0'};
->{% endhighlight %}
+{% highlight python %}
+STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
+GRADES =  ['A','C','C','D','F','\0']
+{% endhighlight %}
+{% highlight c %}
+const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
+char GRADES[6] =  {'A','C','C','D','F','\0'};
+{% endhighlight %}
 
 {% highlight python %}
 def ReadUserInfo():
