@@ -1,6 +1,6 @@
 <title>Roger Johnson</title>
 
-# Who am I?
+# <u>Who am I?</u>
 
 ---
 
@@ -8,12 +8,12 @@
 
 ---
 
-# Code Review
+# <u>Code Review</u>
 {% include youtubePlayer.html id="Co-PABozkaU" %}
 
 ---
 
-# Artifact 1: [C to Python](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/C%20to%20Python)
+# <u>Artifact 1: [C to Python](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/C%20to%20Python)</u>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
 
 The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c) comes from CS-410: Software Reverse Engineering where we were tasked on extracting [assembly code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/Assembly.txt) from an object file and converting it into C. To complete that assignment, I used the terminal command “objdump” to extract the assembly code from the object file and then proceeded to convert it into C. The program was designed to keep track of 5 student’s grades. During the conversion from assembly, I kept the functionality of the program exact, including all flaws.
@@ -121,7 +121,7 @@ The outcome I outlined in module one was to convert the artifact into Python and
 
 ---
 
-# Artifact 2: [Sign-in and Input Handling](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Sign-in%20and%20Input%20Handling)
+# <u>Artifact 2: [Sign-in and Input Handling](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Sign-in%20and%20Input%20Handling)</u>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
 This artifact is a direct continuation from milestone 2 in CS-499 where I translated a program from C to Python. I chose to build off from my first artifact so I can show the steps I have taken to enhance the code. I believe doing it this way will show that I can take a program from fruition to the end. Before my enhancements, the program didn’t have a secure sign-on. It didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also didn’t care what was entered and would exit on certain inputs.
 
@@ -197,7 +197,7 @@ print("Goodbye")
 
 ---
 
-# Artifact 3: [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
+# <u>Artifact 3: [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)</u>
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
 This artifact is a direct continuation from milestone 3 in CS-499 where I added more functionality to the code. I built off from this artifact to show that I can add new functionality to old projects. Before the enhancements this code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had passwords within a list which could be a security risk. I enhanced this artifact by integrating with a Real-time database, Firebase. 
 Because I diverted from my initial outlined outcomes from module 1, I did not meet those objectives. But when I decided to go this route, I had a plan to fulfill the third category. Looking at the Database category though has me questioning if I really did do what was asked of me. I believe what I did would be considered full stack but firebase seems to simple since all you do is import a json file to build the database. If I didn’t fulfill what was needed, for the final I will add a local MongoDB into the program.
