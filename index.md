@@ -180,7 +180,7 @@ def SignInFeature():
 
 {% highlight python %} 
 def HandleInput(output, restriction):
-    while True: # loop until return
+    while True:
         value = input(output)
         try: 
             if type(restriction[0])(value) in restriction:
@@ -203,7 +203,7 @@ choice = HandleInput("Adjust grades for students? Y/N:", ['Y','y','N','n'])
 if choice == 'Y' or choice == 'y': 
     print("Enter new grade for students one at a time")
     for index, student in enumerate(STUDENTS): 
-        GRADES[index] = HandleInput(student + ":", ['a','A','b','B','c','C','d','D','f','F']).upper() 
+       GRADES[index] = HandleInput(student + ":", ['a','A','b','B','c','C','d','D','f','F']).upper() 
     print("You have successfully updated class grades. The grades are now as follows:")
     DisplayStudentInformation()
 
