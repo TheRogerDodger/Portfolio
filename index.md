@@ -15,8 +15,10 @@
 
 # Artifact 1: [C to Python](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/C%20to%20Python)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Software Design and Engineering
-The original artifact comes from CS-410 where we were tasked on extracting assembly code from an object file and converting it into C. The code is designed as a grading tool for teachers and tracks 5 students grades. 
+The original artifact comes from CS-410 where we were tasked on extracting [assembly code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/Assembly.txt) from an object file and converting it into [C](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c). The code is designed as a grading tool for teachers and tracks 5 students grades. 
+
 I chose this artifact because it shows my knowledge of multiple coding languages and my ability to convert code between them. 
+
 The outcome I outlined in module one was to convert the artifact into Python and that was successful. I also added comments into the Python code to explain how it runs. Since Python isn’t my best language I learned the proper ways to define a function and how to take input from a user. The for loop in python is a lot different than other languages since it doesn’t use indexes so I learned how to use enumerate to index the list.
 
 ---
