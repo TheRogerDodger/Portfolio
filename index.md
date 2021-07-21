@@ -19,10 +19,10 @@ The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-page
 
 I chose this artifact because it shows my knowledge of multiple coding languages and my ability to convert code between them. 
 
-```
+{% highlight Python %}
 STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
 GRADES =  ['A','C','C','D','F','\0']
-```
+{% endhighlight %}
 
 ```
 const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
