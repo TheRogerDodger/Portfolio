@@ -16,23 +16,17 @@ I chose this artifact for the software design and engineering category because i
 
 ---
 
-{% highlight python %}
-STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
-GRADES =  ['A','C','C','D','F','\0']
-{% endhighlight %}
 {% highlight c %}
 const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
 char GRADES[6] =  {'A','C','C','D','F','\0'};
 {% endhighlight %}
+{% highlight python %}
+STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
+GRADES =  ['A','C','C','D','F','\0']
+{% endhighlight %}
 
 ---
 
-{% highlight python %}
-def ReadUserInfo():
-    name = input("Enter name:")
-    password = input("Enter password:")
-    return password
-{% endhighlight %}
 {% highlight c %}
 int ReadUserInfo(){
   int password = 0;
@@ -44,17 +38,15 @@ int ReadUserInfo(){
   return password;
 }
 {% endhighlight %}
+{% highlight python %}
+def ReadUserInfo():
+    name = input("Enter name:")
+    password = input("Enter password:")
+    return password
+{% endhighlight %}
 
 ---
 
-{% highlight python %}
-def CheckUserPermissionAccess(password):
-    if int(password) == 123:
-        check = True
-    else:
-        check = False
-    return check
-{% endhighlight %}
 {% highlight c %}
 bool CheckUserPermissionAccess(int password){
   bool check = 0;
@@ -67,14 +59,17 @@ bool CheckUserPermissionAccess(int password){
   return check;
 }
 {% endhighlight %}
+{% highlight python %}
+def CheckUserPermissionAccess(password):
+    if int(password) == 123:
+        check = True
+    else:
+        check = False
+    return check
+{% endhighlight %}
 
 ---
 
-{% highlight python %}
-def DisplayStudentInformation():
-    for index, name in enumerate(STUDENTS):
-        print(name + ": " + GRADES[index])
-{% endhighlight %}
 {% highlight c %}
 void DisplayStudentInformation(){
   int i;
@@ -83,21 +78,14 @@ void DisplayStudentInformation(){
   }
 }
 {% endhighlight %}
+{% highlight python %}
+def DisplayStudentInformation():
+    for index, name in enumerate(STUDENTS):
+        print(name + ": " + GRADES[index])
+{% endhighlight %}
 
 ---
 
-{% highlight python %}
-password = ReadUserInfo()
-if CheckUserPermissionAccess(password) == True:
-    print("Welcome professor. Below are all student grades")
-    DisplayStudentInformation()
-    if input("Adjust grades for students? Y/N:") == "Y":
-        print("Enter the GPA for students one at a time")
-        for index, name in enumerate(STUDENTS):
-            GRADES[index] = input(name + ":")
-        print("You have successfully updated class grades. The grades are now as follows:")
-        DisplayStudentInformation()
-{% endhighlight %}
 {% highlight c %}
 int main()
 {
@@ -122,6 +110,18 @@ int main()
   }
   return 0;
 }
+{% endhighlight %}
+{% highlight python %}
+password = ReadUserInfo()
+if CheckUserPermissionAccess(password) == True:
+    print("Welcome professor. Below are all student grades")
+    DisplayStudentInformation()
+    if input("Adjust grades for students? Y/N:") == "Y":
+        print("Enter the GPA for students one at a time")
+        for index, name in enumerate(STUDENTS):
+            GRADES[index] = input(name + ":")
+        print("You have successfully updated class grades. The grades are now as follows:")
+        DisplayStudentInformation()
 {% endhighlight %}
 
 ---
