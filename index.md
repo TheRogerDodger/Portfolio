@@ -20,6 +20,7 @@ I chose this artifact for the software design and engineering category because i
 const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
 char GRADES[6] =  {'A','C','C','D','F','\0'};
 {% endhighlight %}
+
 {% highlight python %}
 STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
 GRADES =  ['A','C','C','D','F','\0']
@@ -38,6 +39,7 @@ int ReadUserInfo(){
   return password;
 }
 {% endhighlight %}
+
 {% highlight python %}
 def ReadUserInfo():
     name = input("Enter name:")
