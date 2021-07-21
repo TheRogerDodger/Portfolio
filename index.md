@@ -2,6 +2,8 @@
 
 # <u>Who am I?</u>
 
+My name is Roger Johnson, a student at Southern New Hampshire University, studying Computer Science with a concentration in Software Engineering. I started at SNHU in the beginning of 2018 but before my journey at SNHU, I attended Butte Community College. At Butte I found my calling in Computer Programming and made it my main priority to take every course offered on the subject. In 2016 I was given the opportunity to participate in the California Space Grant Consortium which focused on microcomputers and robotics. Participents were given an Award of Excellence along with a Congressional recognition from their local Congress person.
+
 # <u>Professional Self-Assessment</u>
 
 # <u>Code Review</u>
