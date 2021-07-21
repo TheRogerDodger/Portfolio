@@ -144,19 +144,14 @@ I have diverted from the outcomes I outlined in module one but believe I have de
 
 As stated in the last narrative, I don’t have much experience in Python but I am starting to learn that it’s a very intuitive language and is easy to pick up with the knowledge I already have. I learned how to type cast using variables type we already know. One challenge I had was when I started the type casting I was getting an error if the restriction I was looking for was an int. I fixed this with a try-except clause which catches the error and notifies the user that the input was incorrect.
 
+---
+
 {% highlight python %}
 TEACHERS = ['Admin','Johnson']
 PASSWORDS = ['password', 'Roger']
 {% endhighlight %}
 
-{% highlight python %}
-def CheckUserPermissionAccess(password):
-    if int(password) == 123:
-        check = True
-    else:
-        check = False
-    return check
-{% endhighlight %}
+---
 
 {% highlight python %}
 def CheckUserPermissionAccess(index, password):
@@ -166,6 +161,8 @@ def CheckUserPermissionAccess(index, password):
         check = False
     return check
 {% endhighlight %}
+
+---
 
 {% highlight python %}  
 def SignInFeature():
@@ -179,6 +176,8 @@ def SignInFeature():
     return signin
 {% endhighlight %}
 
+---
+
 {% highlight python %} 
 def HandleInput(output, restriction):
     while True: # loop until return
@@ -191,6 +190,8 @@ def HandleInput(output, restriction):
         except:
             print("INVALID INPUT. TRY AGAIN")
 {% endhighlight %}
+
+---
 
 {% highlight python %}   
 while SignInFeature() != True: 
@@ -208,6 +209,8 @@ if choice == 'Y' or choice == 'y':
 
 print("Goodbye")
 {% endhighlight %}
+
+---
 
 # <u>Artifact 3:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
