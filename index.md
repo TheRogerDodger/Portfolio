@@ -186,7 +186,7 @@ if choice == 'Y' or choice == 'y':
 print("Goodbye")
 {% endhighlight %}
 
-# <u>Artifact 1:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
+# <u>Artifact 3:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
 This artifact is a direct continuation from milestone 3 in CS-499 where I added more functionality to the code. I built off from this artifact to show that I can add new functionality to old projects. Before the enhancements this code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had passwords within a list which could be a security risk. I enhanced this artifact by integrating with a Real-time database, Firebase. 
 Because I diverted from my initial outlined outcomes from module 1, I did not meet those objectives. But when I decided to go this route, I had a plan to fulfill the third category. Looking at the Database category though has me questioning if I really did do what was asked of me. I believe what I did would be considered full stack but firebase seems to simple since all you do is import a json file to build the database. If I didn’t fulfill what was needed, for the final I will add a local MongoDB into the program.
@@ -198,31 +198,3 @@ The second function ChangeStudentGrades(), moves code that was in the main code 
 Database.child(“STUDENTS”).child(“Jim”).update({“grade” :  ”A”}); “A” will be the value changed.
 Since we are in a for-loop then we are using variables and the value being changed is a user input so we need input handling.
 The modifications made to existing code were in the DisplayStudntInformation() and SignInFeature(). For the display function we now connect to the database and loop through all students like we did in ChangeStudentGrades() but this time print both name and grade with no return. For SignInFeature() we kept the original user inputs and now use them to search the database and verify that the entered username and password combo exists.
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheRogerDodger/Portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
