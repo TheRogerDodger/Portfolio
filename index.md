@@ -19,16 +19,16 @@
 The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c) comes from CS-410: Software Reverse Engineering where we were tasked on extracting [assembly code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/Assembly.txt) from an object file and converting it into C. To complete that assignment, I used the terminal command “objdump” to extract the assembly code from the object file and then proceeded to convert it into C. The program was designed to keep track of 5 student’s grades. During the conversion from assembly, I kept the functionality of the program exact, including all flaws.
 
 I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. 
-```
-{% highlight python %}
-STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
-GRADES =  ['A','C','C','D','F','\0']
-{% endhighlight %}
-{% highlight c %}
-const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
-char GRADES[6] =  {'A','C','C','D','F','\0'};
-{% endhighlight %}
-```
+
+>{% highlight python %}
+>STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
+>GRADES =  ['A','C','C','D','F','\0']
+>{% endhighlight %}
+>{% highlight c %}
+>const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
+>char GRADES[6] =  {'A','C','C','D','F','\0'};
+>{% endhighlight %}
+
 {% highlight python %}
 def ReadUserInfo():
     name = input("Enter name:")
