@@ -21,6 +21,17 @@ I chose this artifact for the software design and engineering category because i
 
 Converting the C code into Python isn't extremely complicated as long as you have a background in programming and understand the syntax. Because this was one of my first experiences with Python, I had to learn the proper way to take an input from the user and how indices are gathered from a for-loop. Since the original code had no form of documentation, after converting to Python I went through and added the needed comments and code documentaion that can be seen [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py).
 
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
 ---
 
 {% highlight c %}
