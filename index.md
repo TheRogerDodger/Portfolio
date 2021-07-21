@@ -24,122 +24,122 @@ Converting the C code into Python isn't extremely complicated as long as you hav
 <details>
   <summary>Click to veiw code</summary>
   
----
+  ---
 
-{% highlight c %}
-const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
-char GRADES[6] =  {'A','C','C','D','F','\0'};
-{% endhighlight %}
+  {% highlight c %}
+  const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
+  char GRADES[6] =  {'A','C','C','D','F','\0'};
+  {% endhighlight %}
 
-{% highlight python %}
-STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
-GRADES =  ['A','C','C','D','F','\0']
-{% endhighlight %}
+  {% highlight python %}
+  STUDENTS = ["Jim", "Tom", "Ben", "Alice", "Ruby"]
+  GRADES =  ['A','C','C','D','F','\0']
+  {% endhighlight %}
 
----
+  ---
 
-{% highlight c %}
-int ReadUserInfo(){
-  int password = 0;
-  char str1[15];
-  puts("Enter name:");
-  scanf("%s", str1);
-  puts("Enter password:");
-  scanf(" %d", &password);
-  return password;
-}
-{% endhighlight %}
-
-{% highlight python %}
-def ReadUserInfo():
-    name = input("Enter name:")
-    password = input("Enter password:")
-    return password
-{% endhighlight %}
-
----
-
-{% highlight c %}
-bool CheckUserPermissionAccess(int password){
-  bool check = 0;
-  if(password == 123){
-    check = 1;
+  {% highlight c %}
+  int ReadUserInfo(){
+    int password = 0;
+    char str1[15];
+    puts("Enter name:");
+    scanf("%s", str1);
+    puts("Enter password:");
+    scanf(" %d", &password);
+    return password;
   }
-  else{
-    check = 0;
+  {% endhighlight %}
+
+  {% highlight python %}
+  def ReadUserInfo():
+      name = input("Enter name:")
+      password = input("Enter password:")
+      return password
+  {% endhighlight %}
+
+  ---
+
+  {% highlight c %}
+  bool CheckUserPermissionAccess(int password){
+    bool check = 0;
+    if(password == 123){
+      check = 1;
+    }
+    else{
+      check = 0;
+    }
+    return check;
   }
-  return check;
-}
-{% endhighlight %}
+  {% endhighlight %}
 
-{% highlight python %}
-def CheckUserPermissionAccess(password):
-    if int(password) == 123:
-        check = True
-    else:
-        check = False
-    return check
-{% endhighlight %}
+  {% highlight python %}
+  def CheckUserPermissionAccess(password):
+      if int(password) == 123:
+          check = True
+      else:
+          check = False
+      return check
+  {% endhighlight %}
 
----
+  ---
 
-{% highlight c %}
-void DisplayStudentInformation(){
-  int i;
-  for(i = 0; i <= 4; ++i){
-    printf("%s %c\n", STUDENTS[i], GRADES[i]);
-  }
-}
-{% endhighlight %}
-
-{% highlight python %}
-def DisplayStudentInformation():
-    for index, name in enumerate(STUDENTS):
-        print(name + ": " + GRADES[index])
-{% endhighlight %}
-
----
-
-{% highlight c %}
-int main()
-{
-  int password;
-  int i;
-  char choice;
-  password = ReadUserInfo();
-  if(CheckUserPermissionAccess(password) == 1){
-    puts("Welcome professor. Below are all student grades");
-    DisplayStudentInformation();
-    puts("Adjust grades for students?");
-    scanf(" %c", &choice);
-    if(choice == 'Y'){
-      printf("Enter the GPA for students one at a time\n");
-        for(i=0; i <= 4; ++i){
-          printf("%s", STUDENTS[i]);
-          scanf(" %c", &GRADES[i]);
-        }
-      puts("You have successfully updated class grades. The grades are now as follows:");
-      DisplayStudentInformation();
+  {% highlight c %}
+  void DisplayStudentInformation(){
+    int i;
+    for(i = 0; i <= 4; ++i){
+      printf("%s %c\n", STUDENTS[i], GRADES[i]);
     }
   }
-  return 0;
-}
-{% endhighlight %}
+  {% endhighlight %}
 
-{% highlight python %}
-password = ReadUserInfo()
-if CheckUserPermissionAccess(password) == True:
-    print("Welcome professor. Below are all student grades")
-    DisplayStudentInformation()
-    if input("Adjust grades for students? Y/N:") == "Y":
-        print("Enter the GPA for students one at a time")
-        for index, name in enumerate(STUDENTS):
-            GRADES[index] = input(name + ":")
-        print("You have successfully updated class grades. The grades are now as follows:")
-        DisplayStudentInformation()
-{% endhighlight %}
+  {% highlight python %}
+  def DisplayStudentInformation():
+      for index, name in enumerate(STUDENTS):
+          print(name + ": " + GRADES[index])
+  {% endhighlight %}
 
----
+  ---
+
+  {% highlight c %}
+  int main()
+  {
+    int password;
+    int i;
+    char choice;
+    password = ReadUserInfo();
+    if(CheckUserPermissionAccess(password) == 1){
+      puts("Welcome professor. Below are all student grades");
+      DisplayStudentInformation();
+      puts("Adjust grades for students?");
+      scanf(" %c", &choice);
+      if(choice == 'Y'){
+        printf("Enter the GPA for students one at a time\n");
+          for(i=0; i <= 4; ++i){
+            printf("%s", STUDENTS[i]);
+            scanf(" %c", &GRADES[i]);
+          }
+        puts("You have successfully updated class grades. The grades are now as follows:");
+        DisplayStudentInformation();
+      }
+    }
+    return 0;
+  }
+  {% endhighlight %}
+
+  {% highlight python %}
+  password = ReadUserInfo()
+  if CheckUserPermissionAccess(password) == True:
+      print("Welcome professor. Below are all student grades")
+      DisplayStudentInformation()
+      if input("Adjust grades for students? Y/N:") == "Y":
+          print("Enter the GPA for students one at a time")
+          for index, name in enumerate(STUDENTS):
+              GRADES[index] = input(name + ":")
+          print("You have successfully updated class grades. The grades are now as follows:")
+          DisplayStudentInformation()
+  {% endhighlight %}
+
+  ---
   
 </details>
 
