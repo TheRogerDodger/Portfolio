@@ -5,6 +5,9 @@
 # <u>Professional Self-Assessment</u>
 
 # <u>Code Review</u>
+
+The video below shows a code review performed on the [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c). The review covers the orgins of the artifact, existing functionality, code analysis, and potential enhancments. 
+
 {% include youtubePlayer.html id="Co-PABozkaU" %}
 
 # <u>Artifact 1:</u> [C to Python](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/C%20to%20Python)
