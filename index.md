@@ -127,6 +127,72 @@ I have diverted from the outcomes I outlined in module one but believe I have de
 
 As stated in the last narrative, I don’t have much experience in Python but I am starting to learn that it’s a very intuitive language and is easy to pick up with the knowledge I already have. I learned how to type cast using variables type we already know. One challenge I had was when I started the type casting I was getting an error if the restriction I was looking for was an int. I fixed this with a try-except clause which catches the error and notifies the user that the input was incorrect.
 
+{% highlight python %}
+TEACHERS = ['Admin','Johnson']
+PASSWORDS = ['password', 'Roger']
+{% endhighlight %}
+
+{% highlight python %}
+def CheckUserPermissionAccess(password):
+    if int(password) == 123: # password needs to match
+        check = True
+    else:
+        check = False
+    return check
+{% endhighlight %}
+
+{% highlight python %}
+def CheckUserPermissionAccess(index, password):
+    if password == PASSWORDS[index]: # password needs to match
+        check = True
+    else:
+        check = False
+    return check
+{% endhighlight %}
+
+{% highlight python %}  
+def SignInFeature():
+    (password, name) = ReadUserInfo() 
+    for index, teacher in enumerate(TEACHERS): # Loops through TEACHERS list and tracks index
+        if name == teacher and CheckUserPermissionAccess(index, password) == True: # name and password must match
+            signin = True
+            break # When match is found break out of for loop
+        else:
+            signin = False
+    return signin
+{% endhighlight %}
+
+{% highlight python %} 
+def HandleInput(output, restriction):
+    while True: # loop until return
+        value = input(output)
+        try: # Used for when the inputed value type doesnt match the restriction type
+            if type(restriction[0])(value) in restriction:
+                return value
+            else:
+                print("INVALID INPUT. TRY AGAIN")
+        except:
+            print("INVALID INPUT. TRY AGAIN")
+{% endhighlight %}
+
+{% highlight python %}   
+while SignInFeature() != True: # Loop until login is succesful
+    print("Incorrect credentials. Try again")
+
+print("Welcome professor. Below are all student grades")
+DisplayStudentInformation()
+choice = HandleInput("Adjust grades for students? Y/N:", ['Y','y','N','n']) # Asks to continue with Y or N
+if choice == 'Y' or choice == 'y': # else not needed since program will end
+    print("Enter new grade for students one at a time")
+    for index, student in enumerate(STUDENTS): # loops through list STUDENTS
+        GRADES[index] = HandleInput(student + ":", ['a','A','b','B','c','C','d','D','f','F']).upper() # Outputs student name and input new grade
+    print("You have successfully updated class grades. The grades are now as follows:")
+    DisplayStudentInformation()
+
+print("Goodbye")
+{% endhighlight %}
+
+
 ---
 
 # Artifact 3: [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
