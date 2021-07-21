@@ -29,12 +29,12 @@ const char * STUDENTS[5] = { "Jim", "Tom", "Ben", "Alice", "Ruby" };
 char GRADES[6] =  {'A','C','C','D','F','\0'};
 ```
 
-```
+{% highlight python %}
 def ReadUserInfo():
     name = input("Enter name:") # name isnt used anywhere
     password = input("Enter password:") # password
     return password
-```
+{% endhighlight %}
 ```
 int ReadUserInfo(){
   int password = 0;
@@ -46,14 +46,14 @@ int ReadUserInfo(){
   return password;
 }
 ```
-```
+{% highlight python %}
 def CheckUserPermissionAccess(password):
     if int(password) == 123: # password needs to match
         check = True
     else:
         check = False
     return check
-```
+{% endhighlight %}
 ```
 bool CheckUserPermissionAccess(int password){
   bool check = 0;
@@ -66,11 +66,11 @@ bool CheckUserPermissionAccess(int password){
   return check;
 }
 ```
-```
+{% highlight python %}
 def DisplayStudentInformation():
     for index, name in enumerate(STUDENTS):
         print(name + ": " + GRADES[index])
-```
+{% endhighlight %}
 ```
 void DisplayStudentInformation(){
   int i;
@@ -79,7 +79,7 @@ void DisplayStudentInformation(){
   }
 }
 ```
-```
+{% highlight python %}
 password = ReadUserInfo()
 if CheckUserPermissionAccess(password) == True:
     print("Welcome professor. Below are all student grades")
@@ -90,8 +90,7 @@ if CheckUserPermissionAccess(password) == True:
             GRADES[index] = input(name + ":") # Outputs student name and input new grade
         print("You have successfully updated class grades. The grades are now as follows:")
         DisplayStudentInformation()
-    
-```
+{% endhighlight %}
 ```
 int main()
 {
