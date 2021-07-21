@@ -61,6 +61,7 @@ bool CheckUserPermissionAccess(int password){
   return check;
 }
 {% endhighlight %}
+
 {% highlight python %}
 def CheckUserPermissionAccess(password):
     if int(password) == 123:
@@ -80,6 +81,7 @@ void DisplayStudentInformation(){
   }
 }
 {% endhighlight %}
+
 {% highlight python %}
 def DisplayStudentInformation():
     for index, name in enumerate(STUDENTS):
@@ -113,6 +115,7 @@ int main()
   return 0;
 }
 {% endhighlight %}
+
 {% highlight python %}
 password = ReadUserInfo()
 if CheckUserPermissionAccess(password) == True:
