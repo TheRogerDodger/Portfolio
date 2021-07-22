@@ -13,6 +13,7 @@ specific examples from your program and include examples outside of the artifact
 collaborating in a team environment, communicating to stakeholders, data structures and algorithms, software engineering and database,
 and security. Note: This should function as an overall introduction to your skills and you will become more specific relative to the included
 artifacts in the next section.
+
 B. Summarize/introduce how your artifacts fit together and inform the portfolio as a whole; this will help demonstrate the full range of your
 computer science talents and abilities? This section should introduce your audience to the technical artifacts that will follow the professional
 self-assessment. 
