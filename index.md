@@ -315,4 +315,33 @@ Then for the sign-in feature, the If statement changes to compare the user enter
 
 </details>
 
+The main code block of the program doesnt look like much but gets a lot done in presenting the information to the user.
+
+<details>
+  <summary>View code</summary>
+  {% highlight python %} 
+  firebase = FirebaseSetup()
+  db = firebase.database()
+
+  while SignInFeature(db) != True:
+      print("Incorrect credentials. Try again")
+
+  print("Welcome professor. Below are all student grades")
+  DisplayStudentInformation(db)
+
+  choice = HandleInput("Adjust grades for students? Y/N:", ['Y','y','N','n'])
+  if choice == 'Y' or choice == 'y':
+      ChangeStudentGrades(db)
+      print("You have successfully updated class grades. The grades are now as follows:")
+      DisplayStudentInformation(db)
+
+  print("Goodbye")
+  {% endhighlight %}
+
+</details>
+
+Code documentation can be found [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Firebase%20Integration/CS-499-MilestoneFour.py).
+
 <hr>
+
+
