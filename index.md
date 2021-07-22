@@ -344,4 +344,4 @@ Code documentation can be found [here](https://github.com/TheRogerDodger/Portfol
 
 <hr>
 
-
+The integration of the Firebase real-time database turns this simple console program that had no way to save information into a crude full-stack system. Albeit the program still runs in the console, it now keeps all grades up to date and uses simple security measures to limit access to just the teachers. After taking a program this far with a language I wasnt familiar with I feel confident in my abilities as a software engineer.
