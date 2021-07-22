@@ -150,6 +150,8 @@ This artifact is the above finished [Python code](https://github.com/TheRogerDod
 
 I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also didn’t care what was entered and would exit on certain inputs. Below I go into the enhancements that were made.
 
+<hr>
+
 To begin I needed to add two arrays that will hold the usernames of the teachers and their corresponding passwords.
 
 <details>
@@ -160,9 +162,9 @@ To begin I needed to add two arrays that will hold the usernames of the teachers
   PASSWORDS = ['password', 'Roger']
   {% endhighlight %}
 
-  <hr>
-
 </details>
+
+<hr>
 
 I have diverted from the outcomes I outlined in module one but believe I have demonstrated enough skill to justify the change. The enhancements I made were a sign-in feature, input handling and secure input for passwords. The sign-in feature is triggered right away and will loop until a successful login happens. We gather the user inputs and when the password would be entered the console doesn’t output what is being entered as a security measure. The username has the same index as its password so when both is true, a successful login happens. For the input handling I made a function to ensure that the program only continues or exits on the specific value. To do this the function has 2 parameters: output, restriction. The output is the string that prompts the user for input. The restriction is what the user is allowed to enter, usually a list. The function starts with an infinite loop that exits on return. It prompts the user for their input and goes into a try-except clause. This ensures that the user is entering the desired variable type. Next it goes into an if statement that will only be true if the value entered matches any value within the restriction parameter. 
 
