@@ -152,7 +152,7 @@ I chose to build off from my first artifact for the algorithms and data structur
 
 <hr>
 
-For the sign-in feature, I used the existing function ReadUserInfo to gather both username and password. To accomadate a more secure system, when the user is entering their password, the text will not be shown. Since I am using arrays to store the creditials of the teachers and their passwords, the indices of the username and password act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both arrays.
+For the sign-in feature, I used the existing function ReadUserInfo to gather both username and password. To accomadate a more secure system, when the user is entering their password, the text will not be shown. Since I am using lists to store the creditials of the teachers and their passwords, the indices of the username and password together act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both lists.
 
 <details>
   <summary>View code</summary>
@@ -190,7 +190,6 @@ For the input handling I made a function to ensure that the program only continu
 
 </details>
 
-Along with the above improvements I also made it so when the user enters their password, the entered text isn't visible.
 Code documentation can be found [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py).
 
 <hr>
