@@ -190,19 +190,12 @@ For the input handling I made a function to ensure that the program only continu
 
 </details>
 
+Along with the above improvements I also made it so when the user enters their password, the entered text isn't visible.
 Code documentation can be found [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py).
 
 <hr>
 
-I have diverted from the outcomes I outlined in module one but believe I have demonstrated enough skill to justify the change. 
-
-The enhancements I made were a sign-in feature, input handling and secure input for passwords. 
-
-The sign-in feature is triggered right away and will loop until a successful login happens. We gather the user inputs and when the password would be entered the console doesn’t output what is being entered as a security measure. The username has the same index as its password so when both is true, a successful login happens. 
-
-As stated in the last narrative, I don’t have much experience in Python but I am starting to learn that it’s a very intuitive language and is easy to pick up with the knowledge I already have. I learned how to type cast using variables type we already know. One challenge I had was when I started the type casting I was getting an error if the restriction I was looking for was an int. I fixed this with a try-except clause which catches the error and notifies the user that the input was incorrect.
-
-
+As stated in the last category, I don’t have much experience in Python but I am starting to learn that it’s a very intuitive language and is easy to pick up with the knowledge I already have. I learned how to type cast using a variables type we already know. One challenge I had was when I started the type casting I was getting an error if the restriction I was looking for didn't match the entered type. I fixed this with a try-except clause which catches the error and notifies the user that the input was incorrect.
 
 # <u>Artifact 3:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
