@@ -153,17 +153,17 @@ I chose this artifact for the software design and engineering category because i
   
 </details>
 
-Converting the C code into Python isn't extremely complicated as long as you have a background in programming and understand the syntax. Because this was one of my first experiences with Python, I had to learn the proper way to take an input from the user and how indices are gathered from a for-loop. Since the original code had no form of documentation, after converting to Python I went through and added the needed comments and code documentaion that can be seen [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py).
+Converting the C code into Python isn't extremely complicated as long as you have a background in programming and understand the syntax. Because this was one of my first experiences with Python, I had to learn the proper way to take an input from the user and how indices are gathered from a for-loop. Since the original code had no form of documentation, after converting to Python I went through and added the needed comments and code documentation that can be seen [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py).
 
 # <u>Artifact 2:</u> [Sign-in and Input Handling](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Sign-in%20and%20Input%20Handling)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
 This artifact is the above finished [Python code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py). While the program is running, it allows anyone that knows the password to view and change the grades of five students.
 
-I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also didn’t care what was entered and would exit on certain inputs. Below I go into the main enhancements that were made.
+I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also did not care what was entered and would exit on certain inputs. Below I go into the main enhancements that were made.
 
 <hr>
 
-For the sign-in feature, I used the existing function ReadUserInfo to gather both username and password. To accomadate a more secure system, when the user is entering their password, the text will not be shown. Since I am using lists to store the creditials of the teachers and their passwords, the indices of the username and password together act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both lists.
+For the sign-in feature, I used the existing function ReadUserInfo() to gather both username and password. To accommodate a more secure system, when the user is entering their password, the text will not be shown. Since I am using lists to store the credentials of the teachers and their passwords, the indices of the username and password together act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both lists.
 
 <details>
   <summary>View code</summary>
@@ -216,7 +216,7 @@ I chose this artifact for the database category to demonstrate my ability to uti
 
 <hr>
 
-In order to get the [Firebase API](https://firebase.google.com/) working in Python, a module called [Pyrebase](https://github.com/thisbejim/Pyrebase) is needed. To configure Pyrebase, it needs to know where to connect with Firebase using sensitive data. In an attempt to seperate that data from the program itself I created a [json file](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Firebase%20Integration/cred.json) to hold it all. When the program starts, Firebase is initialized and the proper connections are made.
+In order to get the [Firebase API](https://firebase.google.com/) working in Python, a module called [Pyrebase](https://github.com/thisbejim/Pyrebase) is needed. To configure Pyrebase, it needs to know where to connect with Firebase using sensitive data. In an attempt to separate that data from the program itself I created a [json file](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Firebase%20Integration/cred.json) to hold it all. When the program starts, Firebase is initialized and the proper connections are made.
 
 <details>
   <summary>View code</summary>
@@ -267,7 +267,7 @@ Firebase allows you to import a json file of the data you want to track so in or
 
 </details>
 
-Now that the data is being stored within Firebase and the connection is setup, I can start to utilize the API. To keep the code organized and to keep the main code block clean, I made a new function to change the students grades. In order to change every students grade one at a time, we need a for-loop. In order to loop through we need a list of just student names so we access the database STUDENTS and get() the value of the first key. Finally for each student we can change individual grades. To change an existing entry we use update() so an example would look like: Database.child(“STUDENTS”).child(“Jim”).update({“grade” :  ”A”}). 
+Now that the data is being stored within Firebase and the connection is setup, I can start to utilize the API. To keep the code organized and to keep the main code block clean, I made a new function to change the student’s grades. In order to change every student’s grade one at a time, we need a for-loop. In order to loop through we need a list of just student names so we access the database STUDENTS and get() the value of the first key. Finally for each student we can change individual grades. To change an existing entry we use update() so an example would look like: Database.child(“STUDENTS”).child(“Jim”).update({“grade” :  ”A”}). 
 Since we are looking for input from the user though the code is a little more complicated than that when input handling is thrown in.
 
 <details>
@@ -284,7 +284,7 @@ Since we are looking for input from the user though the code is a little more co
 
 </details>
 
-Since we no longer have the lists within the code, there has to be modifications made to the existing functions. In order to display the student information from the database, there needs to be a for-loop like the one in ChangeStudentGrades(). Just this time we're not changing any values.
+Since we no longer have the lists within the code, there must be modifications made to the existing functions. In order to display the student information from the database, there needs to be a for-loop like the one in ChangeStudentGrades(). Just this no values are changing.
 
 <details>
   <summary>View code</summary>
@@ -315,7 +315,7 @@ Then for the sign-in feature, the If statement changes to compare the user enter
 
 </details>
 
-The main code block of the program doesnt look like much but gets a lot done in presenting the information to the user.
+The main code block of the program doesn't look like much but gets a lot done in presenting the information to the user.
 
 <details>
   <summary>View code</summary>
@@ -344,4 +344,4 @@ Code documentation can be found [here](https://github.com/TheRogerDodger/Portfol
 
 <hr>
 
-The integration of the Firebase real-time database turns this simple console program that had no way to save information into a crude full-stack system. Albeit the program still runs in the console, it now keeps all grades up to date and uses simple security measures to limit access to just the teachers. After taking a program this far with a language I wasnt familiar with I feel confident in my abilities as a software engineer.
+The integration of the Firebase real-time database turns this simple console program that had no way to save information into a crude full-stack system. Albeit the program still runs in the console, it now keeps all grades up to date and uses simple security measures to limit access to just the teachers. After taking a program this far with a language I wasn't familiar with I feel confident in my abilities as a software engineer.
