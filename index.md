@@ -152,7 +152,7 @@ I chose to build off from my first artifact for the algorithms and data structur
 
 <hr>
 
-To begin I needed to add two arrays that will hold the usernames of the teachers and their corresponding passwords.
+For the sign-in feature, I used the existing function ReadUserInfo to gather both username and password. Since I am using arrays to store the creditials of the teachers and their passwords, the indices of the username and password act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both arrays.
 
 <details>
   <summary>View code</summary>
