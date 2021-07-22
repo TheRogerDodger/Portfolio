@@ -168,7 +168,11 @@ For the sign-in feature, I used the existing function ReadUserInfo to gather bot
               signin = False
       return signin
   {% endhighlight %}
+  
+</details>
 
+<details>
+  <summary>View code</summary>
   {% highlight python %} 
   def HandleInput(output, restriction):
       while True:
