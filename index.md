@@ -268,7 +268,7 @@ Firebase allows you to import a json file of the data you want to track so in or
 </details>
 
 Now that the data is being stored within Firebase and the connection is setup, I can start to utilize the API. To keep the code organized and to keep the main code block clean, I made a new function to change the students grades. In order to change every students grade one at a time, we need a for-loop. In order to loop through we need a list of just student names so we access the database STUDENTS and get() the value of the first key. Finally for each student we can change individual grades. To change an existing entry we use update() so an example would look like: Database.child(“STUDENTS”).child(“Jim”).update({“grade” :  ”A”}). 
-Since we are looking for input from the user though the code is a little more complicated than that when we throw in the input handling.
+Since we are looking for input from the user though the code is a little more complicated than that when input handling is thrown in.
 
 <details>
   <summary>View code</summary>
@@ -284,5 +284,35 @@ Since we are looking for input from the user though the code is a little more co
 
 </details>
 
+Since we no longer have the lists within the code, there has to be modifications made to the existing functions. In order to display the student information from the database, there needs to be a for-loop like the one in ChangeStudentGrades(). Just this time we're not changing any values.
+
+<details>
+  <summary>View code</summary>
+  {% highlight python %} 
+  def DisplayStudentInformation(database):
+      STUDENTS = database.child("STUDENTS").get()
+      for student in STUDENTS.each():
+          print(student.key() + ": " + str(database.child("STUDENTS").child(student.key()).child("grade").get().val()))
+
+  {% endhighlight %}
+
+</details>
+
+Then for the sign-in feature, the If statement changes to compare the user entered name and password with the correct key-value pair with the Firebase database.
+
+<details>
+  <summary>View code</summary>
+  {% highlight python %} 
+  def SignInFeature(database):
+      (password, name) = ReadUserInfo()
+      if database.child("USER").child(str(name)).child("password").get().val() == password:
+          signin = True
+      else:
+          signin = False
+      return signin
+
+  {% endhighlight %}
+
+</details>
 
 <hr>
