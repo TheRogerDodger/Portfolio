@@ -209,7 +209,7 @@ As stated in the last category, I don’t have much experience in Python but I a
 
 # <u>Artifact 3:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
-The final artifact will be a continuation of the last two categories where I took C code, converted it into Python and then added more functionality.
+The [final artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py) will be a continuation of the last two categories where I took [C code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c), converted it into [Python](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py) and then added more functionality.
 
 I chose this artifact for the database category to demonstrate my ability to utilize APIs and implement a real-time database. Before the enhancements, the code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had plain text passwords within a list which was a security risk. Below I go through the process in implementing Firebase within Python.
 
