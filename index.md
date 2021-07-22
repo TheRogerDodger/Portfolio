@@ -229,4 +229,43 @@ In order to get the [Firebase API](https://firebase.google.com/) working in Pyth
 
 </details>
 
+To keep the structure of the data in the original artifact, I took the lists and created json file to import into Firebase.
+
+<details>
+  <summary>View code</summary>
+  {% highlight json %} 
+  {
+    "USER": {
+      "Admin": {
+        "name": "Admin",
+        "password": "password"
+      },
+      "Johnson": {
+        "name": "Roger Johnson",
+        "password": "Roger"
+      }
+    },
+    "STUDENTS": {
+      "Jim": {
+        "grade": "A"
+      },
+      "Tom": {
+        "grade": "C"
+      },
+      "Ben": {
+        "grade": "C"
+      },
+      "Alice": {
+        "grade": "D"
+      },
+      "Ruby": {
+        "grade": "F"
+      }
+    }
+  }
+  {% endhighlight %}
+
+</details>
+
+
 <hr>
