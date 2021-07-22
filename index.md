@@ -29,7 +29,9 @@ The video below shows a code review performed on the [original artifact](https:/
 
 The [original artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c) comes from CS-410: Software Reverse Engineering where we were tasked on extracting [assembly code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/Assembly.txt) from an object file and converting it into C. To complete that assignment, I used the terminal command “objdump” to extract the assembly code from the object file and then proceeded to convert it into C. The program was designed to keep track of 5 student’s grades. During the conversion from assembly, I kept the functionality of the program exact, including all flaws.
 
-I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. To accomplish that I converted the C code into Python and show the code below, split up into respective sections.
+I chose this artifact for the software design and engineering category because it demonstrates my ability to utilize reverse engineering tools and practices, knowledge of assembly language, and the skill to convert between multiple languages. 
+
+To accomplish that I converted the C code into Python and show the code below, split up into respective sections.
 
 <details>
   <summary>Click to view code</summary>
@@ -159,7 +161,9 @@ Converting the C code into Python isn't extremely complicated as long as you hav
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
 This artifact is the above finished [Python code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py). While the program is running, it allows anyone that knows the password to view and change the grades of five students.
 
-I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also did not care what was entered and would exit on certain inputs. Below I go into the main enhancements that were made.
+I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also did not care what was entered and would exit on certain inputs. 
+
+Below I go into the main enhancements that were made.
 
 <hr>
 
@@ -211,7 +215,9 @@ As stated in the last category, I don’t have much experience in Python but I a
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
 The [final artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py) will be a continuation of the last two categories where I took [C code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c), converted it into [Python](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py) and then added greater functionality.
 
-I chose this artifact for the database category to demonstrate my ability to utilize APIs and implement a real-time database. Before the enhancements, the code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had plain text passwords within a list which was a security risk. Below I go through the process in implementing Firebase within Python.
+I chose this artifact for the database category to demonstrate my ability to utilize APIs and implement a real-time database. Before the enhancements, the code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had plain text passwords within a list which was a security risk. 
+
+Below I go through the process in implementing Firebase within Python.
 
 
 <hr>
