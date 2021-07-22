@@ -152,7 +152,7 @@ I chose to build off from my first artifact for the algorithms and data structur
 
 <hr>
 
-For the sign-in feature, I used the existing function ReadUserInfo to gather both username and password. Since I am using arrays to store the creditials of the teachers and their passwords, the indices of the username and password act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both arrays.
+For the sign-in feature, I used the existing function ReadUserInfo to gather both username and password. To accomadate a more secure system, when the user is entering their password, the text will not be shown. Since I am using arrays to store the creditials of the teachers and their passwords, the indices of the username and password act as a key-value pair. So to check if the entered values match, I used a for-loop with enumerate to track the index and compare both arrays.
 
 <details>
   <summary>View code</summary>
@@ -171,6 +171,8 @@ For the sign-in feature, I used the existing function ReadUserInfo to gather bot
   
 </details>
 
+For the input handling I made a function to ensure that the program only continues or exits on the specific value. To do this the function has 2 parameters: output, restriction. The output is the string that prompts the user for input. The restriction is what the user is allowed to enter, usually a list. The function starts with an infinite loop that exits on return. It prompts the user for their input and goes into a try-except clause. This ensures that the user is entering the desired variable type. Next it goes into an if statement that will only be true if the value entered matches any value within the restriction parameter. 
+
 <details>
   <summary>View code</summary>
   {% highlight python %} 
@@ -188,9 +190,15 @@ For the sign-in feature, I used the existing function ReadUserInfo to gather bot
 
 </details>
 
+Code documentation can be found [here](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py).
+
 <hr>
 
-I have diverted from the outcomes I outlined in module one but believe I have demonstrated enough skill to justify the change. The enhancements I made were a sign-in feature, input handling and secure input for passwords. The sign-in feature is triggered right away and will loop until a successful login happens. We gather the user inputs and when the password would be entered the console doesn’t output what is being entered as a security measure. The username has the same index as its password so when both is true, a successful login happens. For the input handling I made a function to ensure that the program only continues or exits on the specific value. To do this the function has 2 parameters: output, restriction. The output is the string that prompts the user for input. The restriction is what the user is allowed to enter, usually a list. The function starts with an infinite loop that exits on return. It prompts the user for their input and goes into a try-except clause. This ensures that the user is entering the desired variable type. Next it goes into an if statement that will only be true if the value entered matches any value within the restriction parameter. 
+I have diverted from the outcomes I outlined in module one but believe I have demonstrated enough skill to justify the change. 
+
+The enhancements I made were a sign-in feature, input handling and secure input for passwords. 
+
+The sign-in feature is triggered right away and will loop until a successful login happens. We gather the user inputs and when the password would be entered the console doesn’t output what is being entered as a security measure. The username has the same index as its password so when both is true, a successful login happens. 
 
 As stated in the last narrative, I don’t have much experience in Python but I am starting to learn that it’s a very intuitive language and is easy to pick up with the knowledge I already have. I learned how to type cast using variables type we already know. One challenge I had was when I started the type casting I was getting an error if the restriction I was looking for was an int. I fixed this with a try-except clause which catches the error and notifies the user that the input was incorrect.
 
