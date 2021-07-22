@@ -229,10 +229,10 @@ In order to get the [Firebase API](https://firebase.google.com/) working in Pyth
 
 </details>
 
-To keep the structure of the data in the original artifact, I took the lists and created json file to import into Firebase.
+Firebase allows you to import a json file of the data you want to track so in order to keep the structure of the data in the original artifact, I took the lists and created the json.
 
 <details>
-  <summary>View code</summary>
+  <summary>View json</summary>
   {% highlight json %} 
   {
     "USER": {
