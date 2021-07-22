@@ -298,7 +298,7 @@ Since we no longer have the lists within the code, there has to be modifications
 
 </details>
 
-Then for the sign-in feature, the If statement changes to compare the user entered name and password with the correct key-value pair with the Firebase database.
+Then for the sign-in feature, the If statement changes to compare the user entered name and password with the correct key-value pair within the Firebase database.
 
 <details>
   <summary>View code</summary>
