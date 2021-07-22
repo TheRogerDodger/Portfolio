@@ -267,5 +267,21 @@ Firebase allows you to import a json file of the data you want to track so in or
 
 </details>
 
+Now that the data is being stored within Firebase and the connection is setup, I can start to utilize the API. To keep the code organized and to keep the main code block clean, I made a new function to change the students grades. In order to change every students grade one at a time, we need a for-loop. In order to loop through we need a list of just student names so we access the database STUDENTS and get() the value of the first key. So now for each student we can change individual grades. To change an existing entry we use update() so an example would look like: Database.child(“STUDENTS”).child(“Jim”).update({“grade” :  ”A”}). Since we are looking for input from the user though the code is a little more complicated than that when we throw in the input handling.
+
+<details>
+  <summary>View code</summary>
+  {% highlight python %} 
+  def ChangeStudentGrades(database):
+      print("Enter new grade for students one at a time")
+      STUDENTS = database.child("STUDENTS").get() 
+      for student in STUDENTS.each(): 
+          database.child("STUDENTS").child(student.key()).update({"grade": 
+              HandleInput(student.key() + ":", ['a','A','b','B','c','C','d','D','f','F']).upper()})
+
+  {% endhighlight %}
+
+</details>
+
 
 <hr>
