@@ -209,12 +209,24 @@ As stated in the last category, I don’t have much experience in Python but I a
 
 # <u>Artifact 3:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
-The [final artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py) will be a continuation of the last two categories where I took [C code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c), converted it into [Python](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py) and then added more functionality.
+The [final artifact](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Sign-in%20and%20Input%20Handling/CS-499-MilestoneThree.py) will be a continuation of the last two categories where I took [C code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/ProjectCode.c), converted it into [Python](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py) and then added greater functionality.
 
 I chose this artifact for the database category to demonstrate my ability to utilize APIs and implement a real-time database. Before the enhancements, the code was using lists that would revert on program close. It also relied on indexing those lists and hoping the needed matches were present. The code itself had plain text passwords within a list which was a security risk. Below I go through the process in implementing Firebase within Python.
 
+
 <hr>
 
+In order to get the [Firebase API](https://firebase.google.com/) working in Python, a module called [Pyrebase](https://github.com/thisbejim/Pyrebase) is needed. To configure Pyrebase, it needs to know where to connect with Firebase using sensitive data. In an attempt to seperate that data from the program itself I created a [json file](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/Firebase%20Integration/cred.json) to hold it all. When the program starts, Firebase is initialized and the proper connections are made.
 
+<details>
+  <summary>View code</summary>
+  {% highlight python %} 
+  def FirebaseSetup():
+      with open('cred.json') as f:
+          config = json.load(f)
+      return pyrebase.initialize_app(config)
+  {% endhighlight %}
+
+</details>
 
 <hr>
