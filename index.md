@@ -148,7 +148,7 @@ Converting the C code into Python isn't extremely complicated as long as you hav
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Algorithms and Data Structure
 This artifact is the above finished [Python code](https://github.com/TheRogerDodger/Portfolio/blob/gh-pages/C%20to%20Python/CS-499-MilestoneTwo.py). While the program is running, it allows anyone that knows the password to view and change the grades of five students.
 
-I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also didn’t care what was entered and would exit on certain inputs. Below I go into the enhancements that were made.
+I chose to build off from my first artifact for the algorithms and data structure category because of how much room there was for improvement in the code. Before my enhancements, the program didn’t have a secure sign-on, it didn’t use the entered username for any checks and also used ‘123’ as a password for everyone. The program also didn’t care what was entered and would exit on certain inputs. Below I go into the main enhancements that were made.
 
 <hr>
 
@@ -156,10 +156,30 @@ To begin I needed to add two arrays that will hold the usernames of the teachers
 
 <details>
   <summary>View code</summary>
+  
+  {% highlight python %}  
+  def SignInFeature():
+      (password, name) = ReadUserInfo() 
+      for index, teacher in enumerate(TEACHERS): 
+          if name == teacher and CheckUserPermissionAccess(index, password) == True: 
+              signin = True
+              break 
+          else:
+              signin = False
+      return signin
+  {% endhighlight %}
 
-  {% highlight python %}
-  TEACHERS = ['Admin','Johnson']
-  PASSWORDS = ['password', 'Roger']
+  {% highlight python %} 
+  def HandleInput(output, restriction):
+      while True:
+          value = input(output)
+          try: 
+              if type(restriction[0])(value) in restriction:
+                  return value
+              else:
+                  print("INVALID INPUT. TRY AGAIN")
+          except:
+              print("INVALID INPUT. TRY AGAIN")
   {% endhighlight %}
 
 </details>
@@ -170,73 +190,7 @@ I have diverted from the outcomes I outlined in module one but believe I have de
 
 As stated in the last narrative, I don’t have much experience in Python but I am starting to learn that it’s a very intuitive language and is easy to pick up with the knowledge I already have. I learned how to type cast using variables type we already know. One challenge I had was when I started the type casting I was getting an error if the restriction I was looking for was an int. I fixed this with a try-except clause which catches the error and notifies the user that the input was incorrect.
 
----
 
-{% highlight python %}
-TEACHERS = ['Admin','Johnson']
-PASSWORDS = ['password', 'Roger']
-{% endhighlight %}
-
----
-
-{% highlight python %}
-def CheckUserPermissionAccess(index, password):
-    if password == PASSWORDS[index]:
-        check = True
-    else:
-        check = False
-    return check
-{% endhighlight %}
-
----
-
-{% highlight python %}  
-def SignInFeature():
-    (password, name) = ReadUserInfo() 
-    for index, teacher in enumerate(TEACHERS): 
-        if name == teacher and CheckUserPermissionAccess(index, password) == True: 
-            signin = True
-            break 
-        else:
-            signin = False
-    return signin
-{% endhighlight %}
-
----
-
-{% highlight python %} 
-def HandleInput(output, restriction):
-    while True:
-        value = input(output)
-        try: 
-            if type(restriction[0])(value) in restriction:
-                return value
-            else:
-                print("INVALID INPUT. TRY AGAIN")
-        except:
-            print("INVALID INPUT. TRY AGAIN")
-{% endhighlight %}
-
----
-
-{% highlight python %}   
-while SignInFeature() != True: 
-    print("Incorrect credentials. Try again")
-
-print("Welcome professor. Below are all student grades")
-DisplayStudentInformation()
-choice = HandleInput("Adjust grades for students? Y/N:", ['Y','y','N','n']) 
-if choice == 'Y' or choice == 'y': 
-    print("Enter new grade for students one at a time")
-    for index, student in enumerate(STUDENTS): 
-       GRADES[index] = HandleInput(student + ":", ['a','A','b','B','c','C','d','D','f','F']).upper() 
-    print("You have successfully updated class grades. The grades are now as follows:")
-    DisplayStudentInformation()
-
-print("Goodbye")
-{% endhighlight %}
-
----
 
 # <u>Artifact 3:</u> [Firebase Integration](https://github.com/TheRogerDodger/Portfolio/tree/gh-pages/Firebase%20Integration)
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category: Databases
