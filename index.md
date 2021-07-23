@@ -12,7 +12,7 @@ My coursework throughout the Computer Science program at Southern New Hampshire 
 <details>
   <summary>Read more</summary>
 
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collaborate in a Team Environment
+  ### Collaborate in a Team Environment
 
   In CS 310 Collaboration and Team Projects I was introduced to the advantages of working in a team environment. The course tasked us with a software project based on a distributed environment. For the project to be successful, we used tools and techniques such as the IDE, Eclipse, along with EGit to integrate with Github for version control and remote contributors. The project also required strategies to support the collaborative environment, such as code reviews and following software development best practices.
 
