@@ -23,6 +23,7 @@ Within the core Computer Science program, I learned the fundamentals of Software
 
 Security
 The final category the Computer Science program briefly touched on is Security. During CS 405 Secure Coding, I learned to identify common security vulnerabilities, write secure code using the techniques and strategies within the secure programming principles, and how to use industry tools to identify potential vulnerabilities.
+
 Artifact Introduction
 
 
