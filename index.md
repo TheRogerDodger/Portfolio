@@ -31,6 +31,7 @@ The final category the Computer Science program briefly touched on is Security. 
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artifact Introduction
 
+For this ePortfolio, I chose to build off from a singular artifact that was created during the Computer Science program. Specifically, from CS 410 Software Reverse Engineering where I was tasked to extract assembly code from an object file and convert it into C. Selecting a single artifact allows me to showcase the knowledge, skills, and abilities gained from my time at Southern New Hampshire University. To begin I enhanced the C code by transferring it into Python, then added needed features, and finally implementing a real-time database.
 
 # <u>Code Review</u>
 
