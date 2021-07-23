@@ -16,19 +16,19 @@ My coursework throughout the Computer Science program at Southern New Hampshire 
 
   In CS 310 Collaboration and Team Projects I was introduced to the advantages of working in a team environment. The course tasked us with a software project based on a distributed environment. For the project to be successful, we used tools and techniques such as the IDE, Eclipse, along with EGit to integrate with Github for version control and remote contributors. The project also required strategies to support the collaborative environment, such as code reviews and following software development best practices.
 
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communicate to stakeholders
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communicate to stakeholders</h4>
 
   In DAT 220 Fundamentals of Data Mining, I was tasked in writing a comprehensive analysis on the sales data of a company. Using the data mining tool: JMP, I created visualization for the data and identified correlations. The goal was to evaluate the data and present it to stakeholders in a meaningful way so that the company can change marketing strategies. Also, while working on the final for CS 499 Computer Science Capstone, I learned the importance of knowing your audience and to consider the terminology in report writing.
 
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Structures and Algorithms
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Structures and Algorithms</h4>
 
   Almost all courses within the Computer Science program touched on the importance of data structures and algorithms. Each course presented its own series of problems and gave us industry-standard tools to solve them. It was our job to learn the techniques inherent to the implementation of computing solutions. This method allowed me to learn programming concepts such as variables, data types, control structures, logical expressions, and arrays. Most importantly I developed the skills required in computer science to solve problems using the appropriate algorithms to manipulate data.
 
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Engineering and Database
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software Engineering and Database</h4>
 
   Within the core Computer Science program, I learned the fundamentals of Software Engineering. CS 250 Software Development Lifecycle taught me how to apply software development life cycle models and agile methodologies to the development process. In CS 320 Software Test Automation and QA, I gained the skills necessary to apply proper testing techniques. CS 330 Comp Graphic and Visualization taught me how to apply linear math to produce an image. And in CS 340 Client/Server Development I learned the basics of a full-stack system. Within the concentrated Software Engineer courses, I gained further knowledge into the vast subject. CS 350 Emerging Sys Arch & Tech gave me the skills to evaluate software architectures and the ability to determine when to implement architectures and technologies to fulfill business needs. CS 360 Mobile Architecture and Programming I gained the knowledge to apply mobile development principles to develop mobile applications. And in CS 410 Software Reverse Engineering I acquired the skill needed to recreate missing documentation to support legacy software code. Besides software engineering and design, DAD 220 Introduction to Structured Databases allowed me to design structured databases to store data and apply essential operations like CRUD queries.
 
-  ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security
+  <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security</h4>
 
   The final category the Computer Science program briefly touched on is Security. During CS 405 Secure Coding, I learned to identify common security vulnerabilities, write secure code using the techniques and strategies within the secure programming principles, and how to use industry tools to identify potential vulnerabilities.
 
