@@ -10,7 +10,7 @@ My name is Roger Johnson, a student at [Southern New Hampshire University](https
 My coursework throughout the Computer Science program at Southern New Hampshire University gave me the opportunity to hone my programming skills to a point that makes me a desirable employee. After completing the core courses for the Computer Science program, I still couldn’t decide on a specialized career. For this reason, I chose a concentration in Software Engineering. This has allowed me to broaden my knowledge of Computer Science as a whole and sets me up for success in many roles. SNHU has set me up for success in the work force by teaching me how to collaborate in a team environment, communicate to stakeholders, build data structures and algorithms. Along with the understanding of software engineering, databases, and the basics of secure coding.
 
 <details markdown="1">
-  <summary markdown="1">Read more</summary>
+  <summary>Read more</summary>
 
   ### Collaborate in a Team Environment
 
